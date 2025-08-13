@@ -68,4 +68,17 @@ For each scenario, first act as the **user** and raise a request through the cus
     * **User Action:** From the portal, "Report broken hardware" for a laptop that is slow and making noise.
     * **Agent Action:** Open the ticket. Add an internal note: `Scheduled pickup for diagnostics and provided a loaner laptop.` Change the status to **Work in Progress**. Add a final note: `Replaced failing hard drive and re-imaged machine. User confirms issue is resolved.` Change the status to **Resolved**.
 
-    *A screenshot show
+    *A screenshot showing the completed hardware ticket with its full activity log.*
+    ![Hardware Ticket Complete](images/The%20hardware%20Incident%20in%20Complete.png)
+
+### Phase 2: Building the Knowledge Base
+
+1.  **Navigate:** In the left-hand project menu, click on **Knowledge base**.
+2.  **Create Article:** Click **Create article**.
+3.  **Write Content:**
+    * **Title:** `How to Set Up Company Email on a Mobile Phone`
+    * **Content:** Write clear, step-by-step instructions.
+4.  **Publish:** Publish the article. You can now link this article in tickets to provide instant answers to common questions.
+
+    *A screenshot of the published knowledge base article.*
+    ![Knowledge Base Article](images/knowledge-base-article.png)
