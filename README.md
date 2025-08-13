@@ -80,12 +80,12 @@ For each scenario, first act as the **user** and raise a request through the cus
 *(Screenshots of the Jira project demonstrating the completed work)*
 
 **1. The Ticket Queue**
-*A screenshot of the main "All open" queue showing various tickets with different statuses.*
-`![Ticket Queue](images/your-queue-screenshot.png)`
+*A screenshot of the main "All open" queue showing various tickets with different statuses. This example shows a hardware ticket in the "Work in progress" state.*
+`![Ticket Queue](images/The%20hardware%20Incident%20in%20progress.png)`
 
-**2. Example of a Resolved Ticket (Hardware Incident)**
-*A screenshot showing the full activity log of the hardware ticket, including internal notes, status changes, and final resolution.*
-`![Resolved Hardware Ticket](images/resolved-hardware-ticket.png)`
+**2. Example of a Resolved Ticket (Password Reset)**
+*A screenshot showing the full activity log of the password reset ticket, including internal notes, status changes, and final resolution.*
+`![Resolved Password Ticket](images/John%20Password%20reset%20resolve.png)`
 
 **3. The Knowledge Base Article**
 *A screenshot of the published knowledge base article for setting up mobile email.*
