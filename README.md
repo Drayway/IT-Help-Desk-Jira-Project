@@ -32,37 +32,44 @@ This project demonstrates the ability to effectively use an enterprise-grade tic
 
 ## 📖 Step-by-Step Project Guide
 
-This guide provides a detailed walkthrough for replicating this project.
+This guide provides a detailed walkthrough for replicating this project, with screenshots included at each key stage.
 
 ### Phase 0: Setting Up the Service Desk
 
 1.  **Sign Up for Jira:** Go to the [Jira Service Management Free Plan](https://www.atlassian.com/software/jira/service-management/free) and sign up for an account.
 2.  **Create a Site:** Follow the prompts to create a unique site URL (e.g., `yourname-helpdesk.atlassian.net`).
-3.  **Create a Project:** When prompted, select the **"IT Service Management"** template and name your project (e.g., `Corporate IT Help Desk`).
+3.  **Create a Project:** When prompted, select the **"IT Service Management"** template and name your project (e.g., `Corporate IT Help Desk`). The result is a customer-facing portal where users can submit requests.
+
+    *A screenshot of the main customer portal.*
+    `![Customer Portal](images/Customer%20Portal%20.png)`
 
 ### Phase 1: Simulating Help Desk Tickets
 
 For each scenario, first act as the **user** and raise a request through the customer portal. Then, act as the **agent** to process and resolve the ticket in the Jira queues.
 
+*A screenshot of the main ticket queue, showing multiple open requests.*
+`![Ticket Queue](images/Ticket%20Queue.png)`
+
 1.  **Ticket 1: The Password Reset**
     * **User Action:** From the portal, raise a "Help with my account" request for "John Smith" who is locked out of his laptop.
     * **Agent Action:** Open the ticket. Add an internal note: `Verified user's identity via phone.` Add a public comment: `Hi John, I have sent a password reset link to your recovery email.` Change the status to **Resolved**.
+
+    *A screenshot showing the full activity log of the resolved password reset ticket.*
+    `![Resolved Password Ticket](images/John%20Password%20reset%20resolve.png)`
 
 2.  **Ticket 2: The Software Request**
     * **User Action:** From the portal, raise a "Request a new application" for "Jane Doe" who needs Adobe Photoshop.
     * **Agent Action:** Open the ticket. Add an internal note: `Need to get manager approval.` Change the status to **Pending**. Add a second note: `Approval received. Software deployed.` Change the status to **Resolved**.
 
+    *A screenshot of the software request ticket in the queue.*
+    `![Software Request Ticket](images/The%20Software%20Request%20.png)`
+
 3.  **Ticket 3: The Hardware Incident**
     * **User Action:** From the portal, "Report broken hardware" for a laptop that is slow and making noise.
     * **Agent Action:** Open the ticket. Add an internal note: `Scheduled pickup for diagnostics and provided a loaner laptop.` Change the status to **Work in Progress**. Add a final note: `Replaced failing hard drive and re-imaged machine. User confirms issue is resolved.` Change the status to **Resolved**.
 
-4.  **Ticket 4: The Network Issue**
-    * **User Action:** From the portal, "Get IT help" for a user who cannot connect to the office Wi-Fi.
-    * **Agent Action:** Open the ticket. Add a public comment with troubleshooting steps: `Hi, could you please try 'forgetting' the Wi-Fi network and reconnecting?` Change the status to **Waiting for customer**. Add a final note: `User confirmed reconnecting solved the issue.` Change the status to **Resolved**.
-
-5.  **Ticket 5: The "How Do I?" Question**
-    * **User Action:** From the portal, raise a general request asking how to set up email on a mobile phone.
-    * **Agent Action:** Resolve this ticket by creating and linking a Knowledge Base article (see Phase 2).
+    *A screenshot showing the completed hardware ticket with its full activity log.*
+    `![Hardware Ticket Complete](images/The%20hardware%20Incident%20in%20Complete.png)`
 
 ### Phase 2: Building the Knowledge Base
 
@@ -73,20 +80,5 @@ For each scenario, first act as the **user** and raise a request through the cus
     * **Content:** Write clear, step-by-step instructions.
 4.  **Publish:** Publish the article. You can now link this article in tickets to provide instant answers to common questions.
 
----
-
-## 📸 Portfolio Screenshots
-
-*(Screenshots of the Jira project demonstrating the completed work)*
-
-**1. The Ticket Queue**
-*A screenshot of the main "All open" queue showing various tickets with different statuses. This example shows a hardware ticket in the "Work in progress" state.*
-`![Ticket Queue](images/The%20hardware%20Incident%20in%20progress.png)`
-
-**2. Example of a Resolved Ticket (Password Reset)**
-*A screenshot showing the full activity log of the password reset ticket, including internal notes, status changes, and final resolution.*
-`![Resolved Password Ticket](images/John%20Password%20reset%20resolve.png)`
-
-**3. The Knowledge Base Article**
-*A screenshot of the published knowledge base article for setting up mobile email.*
-`![Knowledge Base Article](images/knowledge-base-article.png)`
+    *A screenshot of the published knowledge base article.*
+    `![Knowledge Base Article](images/knowledge-base-article.png)`
