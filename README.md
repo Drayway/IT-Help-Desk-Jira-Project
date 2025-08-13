@@ -41,44 +41,31 @@ This guide provides a detailed walkthrough for replicating this project, with sc
 3.  **Create a Project:** When prompted, select the **"IT Service Management"** template and name your project (e.g., `Corporate IT Help Desk`). The result is a customer-facing portal where users can submit requests.
 
     *A screenshot of the main customer portal.*
-    `![Customer Portal](images/Customer%20Portal%20.png)`
+    ![Customer Portal](images/Customer%20Portal%20.png)
 
 ### Phase 1: Simulating Help Desk Tickets
 
 For each scenario, first act as the **user** and raise a request through the customer portal. Then, act as the **agent** to process and resolve the ticket in the Jira queues.
 
 *A screenshot of the main ticket queue, showing multiple open requests.*
-`![Ticket Queue](images/Ticket%20Queue.png)`
+![Ticket Queue](images/Ticket%20Queue.png)
 
 1.  **Ticket 1: The Password Reset**
     * **User Action:** From the portal, raise a "Help with my account" request for "John Smith" who is locked out of his laptop.
     * **Agent Action:** Open the ticket. Add an internal note: `Verified user's identity via phone.` Add a public comment: `Hi John, I have sent a password reset link to your recovery email.` Change the status to **Resolved**.
 
     *A screenshot showing the full activity log of the resolved password reset ticket.*
-    `![Resolved Password Ticket](images/John%20Password%20reset%20resolve.png)`
+    ![Resolved Password Ticket](images/John%20Password%20reset%20resolve.png)
 
 2.  **Ticket 2: The Software Request**
     * **User Action:** From the portal, raise a "Request a new application" for "Jane Doe" who needs Adobe Photoshop.
     * **Agent Action:** Open the ticket. Add an internal note: `Need to get manager approval.` Change the status to **Pending**. Add a second note: `Approval received. Software deployed.` Change the status to **Resolved**.
 
     *A screenshot of the software request ticket in the queue.*
-    `![Software Request Ticket](images/The%20Software%20Request%20.png)`
+    ![Software Request Ticket](images/The%20Software%20Request%20.png)
 
 3.  **Ticket 3: The Hardware Incident**
     * **User Action:** From the portal, "Report broken hardware" for a laptop that is slow and making noise.
     * **Agent Action:** Open the ticket. Add an internal note: `Scheduled pickup for diagnostics and provided a loaner laptop.` Change the status to **Work in Progress**. Add a final note: `Replaced failing hard drive and re-imaged machine. User confirms issue is resolved.` Change the status to **Resolved**.
 
-    *A screenshot showing the completed hardware ticket with its full activity log.*
-    `![Hardware Ticket Complete](images/The%20hardware%20Incident%20in%20Complete.png)`
-
-### Phase 2: Building the Knowledge Base
-
-1.  **Navigate:** In the left-hand project menu, click on **Knowledge base**.
-2.  **Create Article:** Click **Create article**.
-3.  **Write Content:**
-    * **Title:** `How to Set Up Company Email on a Mobile Phone`
-    * **Content:** Write clear, step-by-step instructions.
-4.  **Publish:** Publish the article. You can now link this article in tickets to provide instant answers to common questions.
-
-    *A screenshot of the published knowledge base article.*
-    `![Knowledge Base Article](images/knowledge-base-article.png)`
+    *A screenshot show
