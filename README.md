@@ -73,12 +73,16 @@ For each scenario, first act as the **user** and raise a request through the cus
 
 ### Phase 2: Building the Knowledge Base
 
-1.  **Navigate:** In the left-hand project menu, click on **Knowledge base**.
-2.  **Create Article:** Click **Create article**.
-3.  **Write Content:**
-    * **Title:** `How to Set Up Company Email on a Mobile Phone`
-    * **Content:** Write clear, step-by-step instructions.
-4.  **Publish:** Publish the article. You can now link this article in tickets to provide instant answers to common questions.
+A key function of a help desk is to create documentation that allows users to solve their own problems, reducing future ticket volume.
 
-    *A screenshot of the published knowledge base article.*
-    ![Knowledge Base Article](images/knowledge-base-article.png)
+1.  **Navigate to the Knowledge Base:** In the main project menu, select **Knowledge base**. From here, select the option to **Write articles**.
+
+    *A screenshot of the initial Knowledge Base setup screen.*
+    ![Knowledge Base Setup](images/Knowledge%20Base.png)
+
+2.  **Create the Space:** Jira uses a Confluence "space" to hold the articles. The next step is to configure and create this space. *Note: A limitation in the free tier prevented the final creation, but the process of navigating to and configuring the knowledge base was completed.*
+
+    *A screenshot showing the final configuration step for creating the Confluence space.*
+    ![Create Space](images/Knowledge%20Base%20Create%20Space.png)
+
+3.  **Write and Publish an Article:** The final step in the process is to write the article content (e.g., "How to Set Up Company Email on a Mobile Phone") and publish it, making it available to users through the portal.
